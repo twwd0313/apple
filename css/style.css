@@ -1,0 +1,481 @@
+/*
+ 星号代码所有元素，选择所有的元素，并且清除它的内边距和外边距
+ * */
+*{
+	margin: 0px;
+	padding: 0px;
+}
+html,body{
+	min-width: 1200px;
+	font-family: "SF Pro SC","SF Pro Display","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+/*设定固定定位*/
+a{
+	text-decoration: none;
+}
+a:hover {
+	text-decoration:underline;
+}
+.header{
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	z-index: 2;
+}
+.gg{
+	height: 40px;
+	background: #444;
+}
+.gg .cantain{
+	width: 1000px;
+	margin: 0 auto;
+}
+.gg .cantain a{
+	float: right;
+	line-height: 40px;
+	color: #fff;
+}
+
+
+
+.nav{
+	height: 44px;
+	background: rgba(45,45,45,0.98);
+	color: #fff;
+	line-height: 44px;
+}
+
+.nav .cantain{
+	width: 1000px;
+	margin: 0 auto;
+	
+}
+.nav .cantain a{
+	color: white;
+}
+.nav .cantain a:hover{
+	color: rgba(255,255,255,0.6) ;
+	text-decoration: none;
+}
+.logo{
+	display: inline-block;
+	width: 44px;
+	height: 44px;
+	/*background: url(../img/image_large.svg) no-repeat center;*/
+}
+.logo img:hover{
+	opacity: 0.6;	
+}
+
+.search{
+	display: inline-block;
+	width: 120px;
+	height: 44px;
+	/*background: url(../img/search.svg)no-repeat center;*/
+}
+.search img:hover{
+	opacity: 0.6;
+}
+.buy{
+	display: inline-block;
+	width: 44px;
+	height: 44px;
+	padding-right: 30px;
+	/*background: url(../img/baga.svg)no-repeat center;*/
+}
+.buy img:hover{
+	opacity:0.6;
+}
+.text{
+	display: inline-block;
+	width: 120px;
+	text-align: center;
+	font-size: 14px;
+}
+.logo,.text{
+	float: left;
+}
+
+.search,.buy{
+	float: right;
+}
+
+
+
+.digou{
+	margin-top: 84px;
+	text-align: center;
+	/*height: 334px;*/
+	background: #fafafa;
+	padding: 51px;
+}
+
+
+.digou h1{
+	font-size: 34px;
+	line-height: 1.125;
+	padding-bottom: 10px;
+	
+}
+
+.digou p{
+	font-size: 20px;
+	line-height: 1.381;
+}
+
+.digou a{
+	color: #0070c9;
+	font-size: 20px;
+	line-height: 1.381;
+}
+.digou-p{
+	padding-bottom: 10px;
+}
+
+.xr{
+	margin-top: 20px;
+	height: 692px;
+	background: url(../img/iphone_xr__b0z59ak0bqdy_largetall.jpg) no-repeat;
+	background-color:  #fafafa;
+	background-position:center bottom;
+	text-align: center;
+}
+.xr h1{
+	padding: 50px 0 20px;
+	font-size: 34px;
+	
+}
+.xr p{
+	font-size: 20px;
+	line-height: 1.381;
+	width: 610px;
+	margin: 0 auto;
+	padding-bottom: 10px;
+	
+}
+.xr a{
+	/*font-size: 17px;*/
+	color: #0070c9;
+}
+
+.banner{
+	width: 100%;
+	text-align: center;
+	
+	
+}
+.left{
+	height: 580px;
+	width: 50%;
+	/*设置width和高度不会应为内边距和边框影响*/
+	box-sizing: border-box;
+	padding: 20px 10px 10px 20px;
+	/*background: #ccc;*/
+	float: left;
+}
+.right{
+	height: 580px;
+	width: 50%;
+	/*设置width和高度不会应为内边距和边框影响*/
+	box-sizing: border-box;
+	padding: 20px 20px 10px 10px;
+	/*background: #ccc;*/
+	float: left;
+}
+
+.banner .left .content{
+	background: url(../img/applebag.jpg) no-repeat;
+	background-position:center;
+	height: 100%;
+	color: #fff;
+	position: relative;
+	
+}
+.banner .right .content{
+	background: url(../img/ban2.jpg) no-repeat;
+	background-position:center bottom;
+	height: 100%;
+	color: #111;
+	position: relative;
+}
+.banner .left .content .text{
+	width: 400px;
+	position: absolute;
+	left: calc(50% - 200px) ;
+	bottom: 20px;
+}
+.banner .left .content h1{
+	font-size: 34px;
+	padding-bottom: 10px;
+}
+.banner .left .content p{
+	font-size: 20px;
+	padding-bottom: 10px;
+	
+}
+.banner .left .content a{
+	font-size: 15px;
+	color: #6bf;
+}
+.banner .right .content .ipad{
+	width: 400px;
+	position: absolute;
+	left: calc(50% - 200px) ;
+	top: 20px;
+}
+.banner .right .content h4{
+	font-size: 34px;
+	padding-bottom: 10px;
+	
+}
+.banner .right .content p{
+	font-size: 20px;
+	padding-bottom: 10px;
+	
+}
+.banner .right .content a{
+	font-size: 15px;
+	color: #0070c9;
+}
+.main{
+	text-align: center;
+}
+
+
+.wacth{
+
+	background-position:center;
+	height: 490px;
+	width:50%;
+	box-sizing: border-box;
+	padding: 20px 10px 10px 20px;
+	float: left;
+}
+.wacth-a{
+	background:url(../img/watch.jpg) no-repeat;
+	background-position:center;
+	height: 100%;
+	/*color: #fff;*/
+	position: relative;
+	background-color: #FAFAFA;
+	
+}
+.wath-t{
+	width: 400px;
+	position: absolute;
+	left: calc(50% - 200px) ;
+	top: 20px;
+}
+.wath-t h4{
+	font-size: 34px;
+	padding-bottom: 10px;
+	
+}
+.wath-t p{
+	font-size: 20px;
+	padding-bottom: 10px;
+	
+}
+.wath-t a{
+	font-size: 15px;
+	color: #0070c9;
+}
+.imac{
+
+	background-position:center;
+	height: 490px;
+	width: 50%;
+	box-sizing: border-box;
+	padding: 20px 20px 10px 10px ;
+	float: left;
+}
+.imac-a{
+	background:url(../img/imac.jpg) no-repeat;
+	background-position:center;
+	height: 100%;
+	/*color: #fff;*/
+	position: relative;
+	background-color: #FAFAFA;
+}
+.imac-t{
+
+	width: 400px;
+	position: absolute;
+	left: calc(50% - 200px) ;
+	top: 20px;
+	
+}
+.imac-a h4{
+	font-size: 34px;
+	padding-bottom: 10px;
+	
+}
+.imac-a p{
+	font-size: 20px;
+	padding-bottom: 10px;
+	
+}
+.imac-a a{
+	font-size: 15px;
+	color: #0070c9;
+}
+.tail{
+	text-align: center;
+}
+.air{
+	background-position:center;
+	height: 490px;
+	width:50%;
+	box-sizing: border-box;
+	padding: 20px 10px 10px 20px;
+	float: left;
+}
+.air-a{
+	background: url(../img/magic.jpg) no-repeat;
+	background-position:center;
+	height: 100%;
+	position: relative;
+	background-color: #FAFAFA;
+}
+.air-t{
+	width: 400px;
+	position: absolute;
+	left: calc(50% - 200px) ;
+	top: 20px;
+}
+.air-t h4{
+	font-size: 34px;
+	padding-bottom: 10px;
+	
+}
+.air-t p{
+	font-size: 20px;
+	padding-bottom: 10px;
+	
+}
+.air-t a{
+	font-size: 15px;
+	color: #0070c9;
+}
+.music{
+	background-position:center;
+	height: 490px;
+	width:50%;
+	box-sizing: border-box;
+	padding: 20px 10px 10px 20px;
+	float: left;
+}
+.music-a{
+	background: url(../img/music.jpg) no-repeat;
+	background-position:center;
+	background-size: auto 490px;
+	height: 100%;
+	position: relative;
+	/*background-color: #FAFAFA;*/
+}
+.music-t{
+	width: 400px;
+	position: absolute;
+	left: calc(50% - 200px) ;
+	top: 20px;
+}
+.music-t h4{
+	font-size: 34px;
+	padding-bottom: 10px;
+	
+}
+.music-t p{
+	font-size: 20px;
+	padding-bottom: 10px;
+	
+}
+.music-t a{
+	font-size: 15px;
+	color: #0070c9;
+}
+.clear:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.footer{
+	margin: 0 auto;
+	height: 100%;
+	width: auto;
+	background-color: #f2f2f2;
+	color: #444444;
+}
+.footer a{
+	color: #444444;
+	
+}
+.f-c{
+	padding: 0px 100px;
+	text-align: left;
+	font-size: 12px;
+}
+.f-c ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+.f-t1{
+	padding-bottom: 10px;
+	
+}
+.f-t1 a{
+	color: black;
+}
+.f-t2{
+	padding-bottom: 10px;
+}
+.f-n{
+	padding-top: 20px;
+	text-align: center;
+	
+}
+.f-n-n{
+	/*height: 300px;*/
+	width:20%;
+	box-sizing: border-box;
+	float: left;
+	text-align: left;
+}
+.f-n-n li{
+	padding: 5px 0px;
+}
+.f-n-l{
+	font-weight: bold;
+}
+.f-f{
+	padding-top: 34px;
+	padding-bottom: 21px;
+}
+.f-d{
+	padding-bottom: 20px;
+	
+}
+.f-d-t{
+	padding: 10px 0px;
+}
+.f-d-t li p{
+	padding-right: 60px;
+}
+.f-d-t li{
+	display: inline;
+	float: left;
+}
+.f-d-t li a{
+	display: block;
+	width: 60px;
+	border-right: 1px solid #9a9a9a;
+	text-align: center;
+}
+.f-d-d{
+	padding: 10px 0px;
+}
+.f-f a{
+	color: #0070c9;
+	
+}
