@@ -368,7 +368,7 @@ a:hover {
 .music-a{
 	background: url(../img/music.jpg) no-repeat;
 	background-position:center;
-	background-size: auto 490px;
+	background-size: 100% 490px;
 	height: 100%;
 	position: relative;
 	/*background-color: #FAFAFA;*/
